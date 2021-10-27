@@ -4,7 +4,7 @@ Automations that make life easier with Shelly &amp; Home Assistant
 
 Home Assistant is an excellent smart home platform and, combined with Shelly products, one can have automations with no cloud involvement at all (but it is optional, if needed).
 
-My project includes these scripts & automations (as defined in Home Assistant's script.yaml & automations.yaml) with Shelly products:
+My project includes these scripts & automations (as defined in Home Assistant's scripts.yaml & automations.yaml) with Shelly products:
 
 
 1. Bedtime for Nina - if it's 20:30 and my kid's Shelly-controlled (with a Shelly 2.5 relay) window roller shutter is still open, speakers throughout the apartment tell her to go to sleep: 
