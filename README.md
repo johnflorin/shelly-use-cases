@@ -7,7 +7,7 @@ Home Assistant is an excellent smart home platform and, combined with Shelly pro
 My project includes these scripts & automations (as defined in Home Assistant's scripts.yaml & automations.yaml) with Shelly products:
 
 
-1. Bedtime for Nina - if it's 20:30 and my kid's Shelly-controlled (with a Shelly 2.5 relay) window roller shutter is still open, speakers throughout the apartment tell her to go to sleep: 
+1. Bedtime for Nina - if it's 20:30 and my kid's Shelly-controlled (with a Shelly 2.5 relay) window roller shutter is still open, Google Home speakers throughout the apartment tell her to go to sleep: 
 
 ```
 
@@ -32,7 +32,10 @@ My project includes these scripts & automations (as defined in Home Assistant's 
 
 ```
 
-2. The dryer is finished, so it should be emptied - I used a Shelly Plug S to do energy usage fingerprinting to identify the dryer's full cycle and used a Home Assistant blueprint to send me a Telegram notification when the dryer is done:
+2. The dryer is finished, so it should be emptied - I used a Shelly Plug S to do energy usage fingerprinting (via Grafana, pictured below) to identify the dryer's full cycle and used a Home Assistant blueprint to send me a Telegram notification when the dryer is done:
+
+![image](https://user-images.githubusercontent.com/45756085/139138463-a54fa35c-8666-4457-a02a-3819f4bf4dbc.png)
+
 
 ```
 
