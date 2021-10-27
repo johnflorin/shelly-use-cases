@@ -9,6 +9,8 @@ My project includes these scripts & automations (as defined in Home Assistant's 
 
 1. Bedtime for Nina - if it's 20:30 and my kid's Shelly-controlled (with a Shelly 2.5 relay) window roller shutter is still open, speakers throughout the apartment tell her to go to sleep: 
 
+```
+
 - alias: Bedtime for Nina
   trigger:
   - platform: time
@@ -28,9 +30,11 @@ My project includes these scripts & automations (as defined in Home Assistant's 
   initial_state: 'on'
   mode: single
 
-
+```
 
 2. The dryer is finished, so it should be emptied - I used a Shelly Plug S to do energy usage fingerprinting to identify the dryer's full cycle and used a Home Assistant blueprint to send me a Telegram notification when the dryer is done:
+
+```
 
 - alias: Dryer has finished
   description: ''
@@ -48,8 +52,11 @@ My project includes these scripts & automations (as defined in Home Assistant's 
           message: The dryer has finished, please empty it.
           title: Dryer Finished
 
+```
 
 3. In order to save power, I turn my PC off at night via an RPC soft shutdown command & a Shelly Plug S then cuts power completely to the power strip that includes the PC, its monitor and other dumb (but power-consuming) devices which are not used at night. I also close the living room window roller shutter (controlled with a Shelly 2.5 relay) via the same bedtime script:
+
+```
 
 bedtime:
   alias: Bedtime
@@ -70,3 +77,5 @@ bedtime:
   - type: turn_off
     entity_id: switch.shellyplug_s_c18ff9
     domain: switch 
+
+```
